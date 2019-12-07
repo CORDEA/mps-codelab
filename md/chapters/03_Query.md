@@ -1,6 +1,6 @@
 ## Query の設計
 
-まずは Query を設計しましょう。
+まずは Query 部分を設計しましょう。
 structure 部分を右クリックし、'Concept' を選択します。
 名前は `QueryConcept` としましょう。
 
@@ -24,5 +24,5 @@ concept 名は先程の `QueryConcept` を入れて下さい。
 今回は `value = a` のような入力をさせたいので、間に `=` が必要です。`=` を入力しましょう。
 入力して Enter を押すと `value Property` というボタンが表示されますので、これをクリックします。
 
-これで `QueryConcept` は終わりです。続いて Path を設計しましょう。
+これで `QueryConcept` は終わりです。続いて Path segment 部分を設計しましょう。
 

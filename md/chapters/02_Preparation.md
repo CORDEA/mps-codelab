@@ -28,5 +28,5 @@ generator では後ほど runtime を参照するため、runtime を dependenci
 おそらく変更はこれだけだと思いますが、念の為他の依存を載せておきます。
 この先困ったときは一度依存関係を見直してみてください。
 
-これで準備は完了です。次は structure 及び editor を設計しましょう。
+これで準備は完了です。次からは structure 及び editor を設計しましょう。
 
