@@ -5,10 +5,11 @@
 まずは Path から行きます。
 structure 部分を右クリックし、'Concept' を選択します。
 名前は `PathContainerConcept` としましょう。
-この Concept では子要素として PathConcept を複数持ちますので、children に `paths : PathConcept[0..n]` というように書きます。
 
-続いて editor です。
-editor 部分を右クリックし、'Concept Editor' を選択します。
+この Concept では子要素として PathConcept を複数持ちますので、children に `paths : PathConcept[1..n]` というように書きます。
+`1..n` とすることで、最低 1 つ以上 path が入力されていないとエラーが出るようにできます。
+
+続いて editor を作成します。
 cell layout は先程まで見てきたものとは少し異なりますが、補完に頼ればほぼ困ることはありません。
 Horizontal Collection を入力すると、`paths Link` というボタンが表示されるはずですので、これをクリックします。
 `paths:`というのはただの文字列で今回は要らないので削ります。残しておいても構いません。
