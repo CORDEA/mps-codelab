@@ -58,7 +58,7 @@ builder.appendPathSegment();
 ここでの Property Macro は LOOP Macro より渡された `PathSegmentConcept` から、 property として定義した `pathSegment` を string として受け取り、さらに `builder#appendPathSegment` に渡しています。
 
 Positive
-:Macro が何をしているかは Macro 部分にフォーカスを当て、Inspector (右下の Panel) を見れば分かります。
+: Macro が何をしているかは Macro 部分にフォーカスを当て、Inspector (右下の Panel) を見れば分かります。
 
 <img src="./10_IncludeAppendPathSegments_01.png" width="500" />
 
