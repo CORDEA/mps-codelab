@@ -7,8 +7,7 @@ typesystem を右クリックし、'New' -> 'Checking Rule' を選択します�
 
 今回は scheme が http の場合に https にするように警告する rule を作成しようと思います。そのため、適用する対象の Concept は UrlConcept です。
 
-applicable for に続いて、`concept = UrlConcept as urlConcept` と入力します。
-conc くらいまで入力して Enter を押すとスムーズです。
+applicable for に続いて、`concept = UrlConcept as urlConcept` と入力します。conc くらいまで入力して Enter を押すとスムーズです。
 
 あとは `do {}` の中に rule を記述していきます。
 
@@ -22,24 +21,18 @@ do {
 
 これで一致していない場合に警告を表示できます。
 
-ただこれだけだと警告が出る位置が url の部分になってしまいます。
-`warning` の部分にフォーカスを当て、Inspector を確認します。
+ただこれだけだと警告が出る位置が url の部分になってしまいます。`warning` の部分にフォーカスを当て、Inspector を確認します。
 
-node feature to highlight(optional) という項目がありますので、`property scheme` にします。
-これで警告の位置が scheme になります。
+`node feature to highlight(optional)` という項目がありますので、`property scheme` にします。これで警告の位置が scheme になります。
 
 <img src="./15_Typesystem_01.png" width="450" />
 
 ついでに Intentions で https に置き換えられるような Quick fix を作成しましょう。
 
-typesystem を右クリックし、'New' -> 'Quick Fix' を選択します。
-名前は `UseHttps` とします。
+typesystem を右クリックし、'New' -> 'Quick Fix' を選択します。名前は `UseHttps` とします。
 
-arguments には `node<UrlConcept>` を渡し、中で参照できるようにします。
-`arguments:` に `node<UrlConcept> urlConcept` と定義します。
-
-続いて、description を記述します。
-Enter を押すと Function が補完されるので、中に説明を記載します。`"Replace with https";` とかで良いでしょう。
+arguments には `node<UrlConcept>` を渡し、中で参照できるようにします。`arguments:` に `node<UrlConcept> urlConcept` と定義します。
+続いて、description を記述します。Enter を押すと Function が補完されるので、中に説明を記載します。`"Replace with https";` とかで良いでしょう。
 
 最後に実行された場合の処理を記述します。
 scheme を https に変更すれば良いので、以下のように書きます。

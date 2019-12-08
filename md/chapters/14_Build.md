@@ -3,8 +3,7 @@
 いよいよ最後です。
 ここでは先ほどまで作っていた URL Builder、Template を使用して URL を出力します。
 
-それでは `Main` class を選択してください。
-まずは `#main` で print している "Hello" を `builder#build()` の結果に置き換えましょう。
+それでは `Main` class を選択してください。まずは `#main` で print している "Hello" を `builder#build()` の結果に置き換えましょう。
 
 ```java
 public static void main(string[] args) {
@@ -14,9 +13,7 @@ public static void main(string[] args) {
 ```
 
 Constructor に Scheme と Host を渡しましょう。
-これはおなじみの Property Macro です。
-Scheme には 'Add Property Macro: node.scheme (property)' を、
-Host には 'Add Property Macro: node.name (property)' を選択します。
+これはおなじみの Property Macro です。Scheme には 'Add Property Macro: node.scheme (property)' を、Host には 'Add Property Macro: node.name (property)' を選択します。
 
 Path segment と Query の追加も必要になります。これは先ほど template を作成しましたのでこれを使います。
 
@@ -39,8 +36,7 @@ public static void main(String[] args) {
 
 <img src="./14_Build_02.png" width="500" />
 
-生成された Code は問題なさそうです。
-Node を右クリックして実行してみましょう。
+生成された Code は問題なさそうです。Node を右クリックして実行してみましょう。
 
 ```
 https://example.com/api/v2?value=a&value=b
@@ -48,8 +44,7 @@ https://example.com/api/v2?value=a&value=b
 
 正常に出力されましたね。
 
-以上でこの Codelab は終わりです。
-なんとなく MPS の使い方が分かってもらえたなら幸いです。
+以上でこの Codelab は終わりです。なんとなく MPS の使い方が分かってもらえたなら幸いです。
 
 なお、付録として typesystem による入力規則の設定を行います。興味があれば見てみてください。
 

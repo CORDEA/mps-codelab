@@ -28,41 +28,33 @@ private static void appendQuery(UrlBuilder builder) {
 
 <img src="./12_IncludeAppendQueries_01.png" width="500" />
 
-さて、このままの状態で rule と `Main` class への追加を行うとエラーになります。この状態では `node.queries` の要素分だけ `#appendQuery` を呼び出すからです。
-先に書いたとおり、`#appendQuery` は実際には生成されない method であり、前の Chapter で見た生成される method は `appendQuery_a0` のような名前でした。
+さて、このままの状態で rule と `Main` class への追加を行うとエラーになります。この状態では `node.queries` の要素分だけ `#appendQuery` を呼び出すからです。先に書いたとおり、`#appendQuery` は実際には生成されない method であり、前の Chapter で見た生成される method は `appendQuery_a0` のような名前でした。
+ということは、なんらかの方法で生成される method を呼び出す必要があります。こういう時に使えるのが label と Reference Macro です。
 
-ということは、何らかの方法で生成される method を呼び出す必要があります。こういう時に使えるのが label と Reference Macro です。
-
-まず、main に移動し、`mapping labels:` に label を定義します。
-名前を `appendQuery`、Output concept を `MethodDeclaration` とします。
+まず、main に移動し、`mapping labels:` に label を定義します。名前を `appendQuery`、Output concept を `MethodDeclaration` とします。
 Input concept は `<no input concept>` のままで大丈夫です。
 
 <img src="./12_IncludeAppendQueries_02.png" width="500" />
 
-次に `include_appendQuery` を選択し、Template Fragment の Inspector を確認してください。
-`mapping label:` に `appendQuery` と記述します。
+次に `include_appendQuery` を選択し、Template Fragment の Inspector を確認してください。`mapping label:` に `appendQuery` と記述します。
 
 <img src="./12_IncludeAppendQueries_03.png" width="250" />
 
 `include_appendQueries` に戻りましょう。
-`#appendQuery` の呼び出し部分、`appendQuery` の名前の部分にフォーカスを当て、Intentions を表示します。
-'Add Reference Macro' を選択してください。
+`#appendQuery` の呼び出し部分、`appendQuery` の名前の部分にフォーカスを当て、Intentions を表示します。'Add Reference Macro' を選択してください。
 
 <img src="./12_IncludeAppendQueries_04.png" width="500" />
 
-`->$` の部分にフォーカスを当てて Inspector を確認すると、`referent :` という部分が確認できるはずです。
-ここに、`genContext.get output appendQuery for (node);` というように記述します。
+`->$` の部分にフォーカスを当てて Inspector を確認すると、`referent :` という部分が確認できるはずです。ここに、`genContext.get output appendQuery for (node);` というように記述します。
 'genContext.get' まで入力して Enter を押し、'get output by label and input' を選択すると良いでしょう。
 
 <img src="./12_IncludeAppendQueries_05.png" />
 
-準備は完了したので、reduction rules に追加しましょう。
-concept を `QueryContainerCocnept`、consequence を `include_appendQueries` として定義します。
+準備は完了したので、reduction rules に追加しましょう。concept を `QueryContainerCocnept`、consequence を `include_appendQueries` として定義します。
 
 <img src="./12_IncludeAppendQueries_06.png" width="600" />
 
-最後におなじみの COPY_SRC Macro です。
-`Main` class に移動し、class 配下の良さげなところで Intentions を表示し、'Apply COPY_SRC for node.queryContainer' を選択してください。
+最後におなじみの COPY_SRC Macro です。`Main` class に移動し、class 配下の良さげなところで Intentions を表示し、'Apply COPY_SRC for node.queryContainer' を選択してください。
 
 <img src="./12_IncludeAppendQueries_07.png" width="350" />
 

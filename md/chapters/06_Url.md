@@ -2,8 +2,7 @@
 
 ここでは、大本となる Url を設計します。
 
-structure 部分を右クリックし、'Concept' を選択します。
-名前は `UrlConcept` としましょう。
+structure 部分を右クリックし、'Concept' を選択します。名前は `UrlConcept` としましょう。
 
 全体の構文は以下のような形でした。
 
@@ -21,8 +20,8 @@ value = a
 大本の structure の `name` はそのまま後に説明する sandbox の名前として扱われますので、host を `name` として使いましょう。
 `UrlConcept` に `INamedConcept` を実装し、加えて properties に `scheme : string` を定義します。
 
-children には `pathSegmentContainer : PathSegmentContainerConcept[1]` を定義します。これによって先ほど定義したとおり、Path segment を複数持つことができます。
-同じように queryContainer も定義しましょう。
+`children:` には `pathSegmentContainer : PathSegmentContainerConcept[1]` を定義します。これによって先ほど定義したとおり、Path segment を複数持つことができます。
+同じように `queryContainer` も定義しましょう。
 
 
 `UrlConcept` ではもう少しやることが残っています。
@@ -31,13 +30,13 @@ children には `pathSegmentContainer : PathSegmentContainerConcept[1]` を定�
 
 <img src="./06_Url_01.png" width="450" />
 
-続いて UrlConcept の editor を作成します。
-Vertical Collection を作成し、さらに Horizontal Collection を作成します。
-ラベルとして url を入力し、scheme property をセットします。補完が出てこない場合は `{` を入力してから Enter を押すと出てきます。
-続いて、一つ `<constant>` を挟んで name property をセットします。`<constant>` を入れたあと 'New Cell' をクリックするとスムーズです。
+できたら `UrlConcept` の editor を作成します。
 
-また一つ `<constant>` を挟み、'pathSegmentContainer Link' をクリックします。`pathSegmentContainer:` というラベルは今回不要ですが、つけておいても良いでしょう。
-その後 `<constant>` を挟んで今度は 'queryContainer Link' をクリックします。
+Vertical Collection を作成し、さらに Horizontal Collection を作成します。ラベルとして url を入力し、scheme property をセットします。補完が出てこない場合は `{` を入力してから Enter を押すと出てきます。
+続いて、一つ `<constant>` を追加して name property をセットします。`<constant>` を入れたあと 'New Cell' をクリックするとスムーズです。
+
+また一つ `<constant>` を追加し、'pathSegmentContainer Link' をクリックします。`pathSegmentContainer:` というラベルは今回不要ですが、つけておいても良いでしょう。
+その後 `<constant>` を追加して今度は 'queryContainer Link' をクリックします。
 
 <img src="./06_Url_02.png" width="350" />
 

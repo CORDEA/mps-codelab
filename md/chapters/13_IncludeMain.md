@@ -15,8 +15,7 @@ private void appendQueries(UrlBuilder builder) {
 
 これらは実際には無視されます。
 
-今回は `#main` で呼び出すための template ですので、method 全体ではなく、中の呼び出しだけを Template Fragment とします。
-そのため、class 名と同様に method 名もなんでも構いません (修飾子もなんでも良い)。
+今回は `#main` で呼び出すための template ですので、method 全体ではなく、中の呼び出しだけを Template Fragment とします。そのため、class 名と同様に method 名もなんでも構いません (修飾子もなんでも良い)。
 
 ```java
 public void _method_(UrlBuilder builder) {
@@ -41,11 +40,9 @@ Positive
 
 <img src="./13_IncludeMain_01.png" width="450" />
 
-続けて main を選択し、reduction rules に追加しましょう。
-Concept を `UrlConcept`、consequence を `include_main` として定義します。
+続けて main を選択し、reduction rules に追加しましょう。concept を `UrlConcept`、consequence を `include_main` として定義します。
 
 <img src="./13_IncludeMain_02.png" width="600" />
 
-以上でこの Chapter は終了です。
-次で実際に URL を build します。
+以上でこの Chapter は終了です。次で実際に URL を build します。
 

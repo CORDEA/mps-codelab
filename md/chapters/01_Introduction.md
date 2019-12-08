@@ -1,7 +1,8 @@
 ## Introduction
 
-この Codelab では MPS の使い方がなんとなく分かるレベルを目指します。
-難易度については公式の Tutorial としてある MPS Calculator Language Tutorial よりも簡単だと思います。
+JetBrains MPS は JetBrains が開発した言語ワークベンチです。
+この Codelab では、その MPS の使い方がなんとなく分かるレベルを目指します。
+難易度にしては公式の Tutorial としてある MPS Calculator Language Tutorial よりも簡単だと思います。
 
 具体的には以下に触れていきます。
 

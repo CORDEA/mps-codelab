@@ -2,12 +2,10 @@
 
 ここでは、先ほど作った Path segment と Query を複数持つような structure の定義及び editor の設計をします。
 
-まずは Path segment から設計します。
-structure 部分を右クリックし、'Concept' を選択します。
+まずは Path segment から設計します。structure 部分を右クリックし、'Concept' を選択します。
 名前は `PathSegmentContainerConcept` としましょう。
 
-この Concept では子要素として `PathSegmentConcept` を複数持ちますので、children に `pathSegments : PathSegmentConcept[1..n]` というように書きます。
-`1..n` とすることで、最低一つ以上 Path segment が入力されていないとエラーが出るようにできます。
+この Concept では子要素として `PathSegmentConcept` を複数持ちますので、`children:` に `pathSegments : PathSegmentConcept[1..n]` というように書きます。`1..n` とすることで、最低一つ以上 Path segment が入力されていないとエラーが出るようにできます。
 
 <img src="./05_Container_01.png" width="500" />
 
@@ -20,7 +18,7 @@ Horizontal Collection を入力すると、'pathSegments Link' というボタ�
 
 次に Query を見ていきます。
 といっても、作りは `PathSegmentContainerConcept` と全く同じです。
-children を `queries : QueryConcept[0..n]` とします。
+`children:` を `queries : QueryConcept[0..n]` とします。
 
 <img src="./05_Container_03.png" width="450" />
 
@@ -28,6 +26,5 @@ editor は全く同じなので良き感じに作ってください。
 
 <img src="./05_Container_04.png" width="450" />
 
-以上で Path segment と Query 部分の設計が終わりました。
-次はいよいよ structure / editor の最後、Url の設計に入ります。
+以上で Path segment と Query 部分の設計が終わりました。次はいよいよ structure / editor の最後、Url の設計に入ります。
 

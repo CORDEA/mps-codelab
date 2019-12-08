@@ -4,9 +4,8 @@
 
 まずは Project を作成しましょう。
 
-'Create New Project' から 'Language project' を選択します。
-Project name, Language name は任意の値を入れてください。
-'Create Runtime Solucation' と 'Create Sandbox Solution' に check を入れて 'OK' を押します。
+'Create New Project' から 'Language project' を選択します。Project name, Language name は任意の値を入れてください。
+'Create Runtime Solution' と 'Create Sandbox Solution' に check を入れて 'OK' を押します。
 
 <img src="./02_Preparation_01.png" width="700" />
 
@@ -14,18 +13,19 @@ Project name, Language name は任意の値を入れてください。
 
 次に依存関係を整理します。
 
-まず runtime の依存関係を見ていきましょう。
-runtime (四角の 'S') を右クリックし、'Module Properties' を選択します。
+まず runtime の依存関係を見ていきましょう。runtime (四角の 'S') を右クリックし、'Module Properties' を選択します。
 'Solution Properties' という画面が表示されるので、Dependencies に `jetbrains.mps.baseLanguage` を追加します (JDK でも大丈夫です)。
-これは MPS において [Java に相当します](https://www.jetbrains.com/help/mps/base-language.htm)。すでに追加されているかもしれません。
+`jetbrains.mps.baseLanguage` は MPS において [Java に相当します](https://www.jetbrains.com/help/mps/base-language.htm)。すでに追加されているかもしれません。
 
 <img src="./02_Preparation_02.png" width="700" />
 
 続いて、その中の runtime (フォルダの 'M') を右クリックし、'Model Properties' を選択します (先ほどの 'Module Properties' ではありません)。
 Used Languages に `jetbrains.mps.baseLanguage` を追加します。
-Dependencies に `java.net@java_stub` と `java.io@java_stub` を追加します。これは、後ほど java.net.URI を使うからです。
 
 <img src="./02_Preparation_03.png" width="700" />
+
+Dependencies に `java.net@java_stub` と `java.io@java_stub` を追加します。これは、後ほど `java.net.URI` を使うからです。
+
 <img src="./02_Preparation_04.png" width="700" />
 
 次に Language (四角の 'L') を右クリックして 'Module Properties' を選択し、'Language Properties' を表示します。
