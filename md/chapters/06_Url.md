@@ -26,16 +26,16 @@ children には `pathSegmentContainer : PathSegmentContainerConcept[1]` を定�
 
 
 `UrlConcept` ではもう少しやることが残っています。
-まず、`UrlConcept` は大本となる structure なので `instance can be root` を `true` にして下さい。
+まず、`UrlConcept` は大本となる structure なので `instance can be root` を `true` にしてください。
 加えて、`IMainClass` を実装します。これがないと sandbox で作成した Node が実行可能になりません。
 
 
 続いて UrlConcept の editor を作成します。
-'Vertical Collection' を作成し、さらに 'Horizontal Collection' を作成します。
+Vertical Collection を作成し、さらに Horizontal Collection を作成します。
 ラベルとして url を入力し、scheme property をセットします。補完が出てこない場合は `{` を入力してから Enter を押すと出てきます。
-続いて、1 つ `<constant>` を挟んで name property をセットします。1 つ `<constant>` を入れたあと 'New Cell' をクリックするとスムーズです。
+続いて、一つ `<constant>` を挟んで name property をセットします。`<constant>` を入れたあと 'New Cell' をクリックするとスムーズです。
 
-また 1 つ `<constant>` を挟み、'pathSegmentContainer Link' をクリックします。`pathSegmentContainer:` というラベルは今回不要ですが、つけておいても良いでしょう。
+また一つ `<constant>` を挟み、'pathSegmentContainer Link' をクリックします。`pathSegmentContainer:` というラベルは今回不要ですが、つけておいても良いでしょう。
 その後 `<constant>` を挟んで今度は 'queryContainer Link' をクリックします。
 
 これで Url の設計は終わりです。

@@ -1,7 +1,7 @@
 ## main の template 作成
 
 ここでは `#main` 内で `#appendPathSegments` と `#appendQueries` を呼び出すための template を作成します。
-template 名を include_main とします。input は `<any node>` のままで大丈夫です。
+template 名を `include_main` とします。input は `<any node>` のままで大丈夫です。
 
 空の class を `content node:` に定義し、`#appendPathSegments` と `#appendQueries` を定義します。
 

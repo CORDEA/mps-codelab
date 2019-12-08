@@ -1,7 +1,7 @@
 ## appendQueries の template 作成
 
 ここでは `#appendQueries` の template を作成します。
-template 名を include_appendQueries とし、input は `QueryContainerConcept` とします。
+template 名を `include_appendQueries` とし、input は `QueryContainerConcept` とします。
 
 `#appendQueries` と `#appendQuery` を定義します。
 
@@ -44,7 +44,7 @@ Input concept は `<no input concept>` のままで大丈夫です。
 
 `->$` の部分にフォーカスを当てて Inspector を確認すると、`referent :` という部分が確認できるはずです。
 ここに、`genContext.get output appendQuery for (node);` というように記述します。
-`genContext.get` まで入力して Enter を押し、'get output by label and input' を選択すると良いでしょう。
+'genContext.get' まで入力して Enter を押し、'get output by label and input' を選択すると良いでしょう。
 
 準備は完了したので、reduction rules に追加しましょう。
 concept を `QueryContainerCocnept`、consequence を `include_appendQueries` として定義します。

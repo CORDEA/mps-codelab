@@ -9,12 +9,12 @@
 main で直接 `UrlBuilder#appendPathSegment` を呼び出しても良いのですが、今回は template の使い方を見るために多少冗長な書き方をしています。
 
 それでは、main@generator を右クリックし、'template declaration' を選択します。
-template 名は include_appendPathSegments をしましょう。
+template 名は `include_appendPathSegments` としましょう。
 input には対応する Concept を指定します。今回の場合は `PathSegmentContainerConcept` です。
 
-content node には実際の template を記述していきます。
-Intentions (Option + Enter) を表示し、'Replace with instance of ClassConcept concept' を選択します。
-すると、空の class が補完されるはずです。
+Content node には実際の template を記述していきます。
+Intentions (Alt + Enter) を表示し、'Replace with instance of ClassConcept concept' を選択します。
+すると、空の Class が補完されるはずです。
 
 実際に使用するのはこの class ではなく、中の method です。
 そのため、この class 名はなんでも構いません。ここでは `_class_` とします。
@@ -77,7 +77,7 @@ main の下辺りを空けて Intentions を開きます。
 そして先程の reduction rule はこれらの Node を変換します。
 
 では、実際に生成されたコードを見てみましょう。
-Rebuild し、sandbox で 'Preview Generated Code' を選択します。
+Make (または Rebuild) し、sandbox で 'Preview Generated Code' を選択します。
 何か Path segment を書いている場合は、以下のようになっているはずです。
 
 ```java

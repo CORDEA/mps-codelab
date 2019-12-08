@@ -15,9 +15,9 @@
 
 - constraints
 - behavior
-- typesystem (軽く触れますが、全くの言って差し支えないレベルです)
+- typesystem (付録で軽く触れます)
 
-各役割についてはやっているうちに分かってくると思いますが、気になる場合は公式のドキュメントを参照して下さい。
+各役割についてはやっているうちに分かってくると思いますが、気になる場合は公式のドキュメントを参照してください。
 
 始める前に作るものも軽く紹介しておきます。作るのは URL builder です。
 
@@ -40,5 +40,6 @@ https://example.com/api/v2?value=a&value=b
 ```
 
 のような URL を build し出力する Java code を生成するために structure の定義、editor の設計、generator の作成を行います。
+
 それでは始めていきましょう。
 

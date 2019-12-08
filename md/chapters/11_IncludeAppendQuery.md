@@ -24,7 +24,7 @@ private static void appendQuery(UrlBuilder builder) {
 ```
 
 続いて Property Macro を追加します。
-第 1 引数に name property、第 2 引数に value property を割り当てて下さい。
+第 1 引数に name property、第 2 引数に value property を割り当ててください。
 名前は何でも良いですが、Key と Value にしましょう。
 
 次に `appendQuery` の method 名をユニークにします。
@@ -34,7 +34,7 @@ private static void appendQuery(UrlBuilder builder) {
 value の中身がなにも入っていないはずです。
 
 この `<no statements>` に `genContext.unique name from (templateValue) in context (<no node>)` というように書きます。
-genContext を入力した後に un くらいまで入力して Enter を押すと勝手に入力されます。
+genContext を入力した後に 'un' くらいまで入力して Enter を押すと勝手に入力されます。
 
 これでこの templateValue に従ってユニークな名前が自動的に生成されるようになります。
 
@@ -50,7 +50,7 @@ Intentions から、'Add Node Macro' を選択し、中身に `COPY_SRC` と書�
 続いて、これを LOOP Macro で囲みます。
 COPY_SRC Macro を選択した状態で 'Add Node Macro' を選択肢、中身を `LOOP` とします。
 
-Inspector を確認して下さい。
+Inspector を確認してください。
 `iteration sequence` の中身がない状態になっているので、これを `node.queryContainer.queries` と指定し、`QueryConcept` の配列を返します。
 
 そして COPY_SRC Macro の Inspector を確認し、`mapped node` で node を指定します (空の状態で Enter を押すと Function は生成されます)。
