@@ -39,9 +39,12 @@ public void _method_(UrlBuilder builder) {
 Positive
 :ここでは予め定義していた `include_appendPathSegments` と `include_appendQueries` の method をそのまま空で定義し直すことで method の呼び出しを行っていますが、より安全に生成するなら Reference Macro を使用しましょう。<br>mapping labels に新しい label を追加し、呼び出しで Reference Macro を使用することで実現できます。
 
+![](./13_IncludeMain_01.png)
 
 続けて main を選択し、reduction rules に追加しましょう。
 Concept を `UrlConcept`、consequence を `include_main` として定義します。
+
+![](./13_IncludeMain_02.png)
 
 以上でこの Chapter は終了です。
 次で実際に URL を build します。
