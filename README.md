@@ -1,1 +1,1 @@
-# mps-codelab
+# JetBrains MPS Codelab
