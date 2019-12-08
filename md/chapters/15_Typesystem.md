@@ -28,6 +28,8 @@ do {
 node feature to highlight(optional) という項目がありますので、`property scheme` にします。
 これで警告の位置が scheme になります。
 
+![](./15_Typesystem_01.png)
+
 ついでに Intentions で https に置き換えられるような Quick fix を作成しましょう。
 
 typesystem を右クリックし、'New' -> 'Quick Fix' を選択します。
@@ -47,6 +49,8 @@ execute(node)->void {
     urlConcept.scheme = "https";
 }
 ```
+
+![](./15_Typesystem_02.png)
 
 これで sandbox を開き、http と入力すると警告が出るようになりました。また、Intentions により https に変換することもできます。
 
