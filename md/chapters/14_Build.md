@@ -22,6 +22,8 @@ Path segment と Query の追加も必要になります。これは先程 templ
 
 'Add Node Macro' で COPY_SRC Macro を配置し、mapped node で `node` をそのまま返します。
 
+![](./14_Build_01.png)
+
 これで生成された Code を確認してみましょう。
 
 ```java
@@ -34,6 +36,8 @@ public static void main(String[] args) {
     System.out.println(builder.build());
 }
 ```
+
+![](./14_Build_02.png)
 
 生成された Code は問題なさそうです。
 Node を右クリックして実行してみましょう。
