@@ -22,11 +22,11 @@ Horizontal Collection を入力すると、'pathSegments Link' というボタ�
 といっても、作りは `PathSegmentContainerConcept` と全く同じです。
 children を `queries : QueryConcept[0..n]` とします。
 
-<img src="./05_Container_03.png" width="500" />
+<img src="./05_Container_03.png" width="450" />
 
 editor は全く同じなので良き感じに作ってください。
 
-<img src="./05_Container_04.png" width="500" />
+<img src="./05_Container_04.png" width="450" />
 
 以上で Path segment と Query 部分の設計が終わりました。
 次はいよいよ structure / editor の最後、Url の設計に入ります。

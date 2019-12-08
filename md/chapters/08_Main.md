@@ -9,14 +9,14 @@ class 名は実のところなんでも良いのですが、`Main` にしてお�
 その次に `main` を用意しますが、これは class 内で 'psvm' と入力すると勝手に作ってくれます。便利ですね。
 まだ生成部分で用意すべきことが色々ありますが、一回 `"Hello"` と `println` して動作を見てみましょう。
 
-<img src="./08_Main_01.png" width="500" />
+<img src="./08_Main_01.png" width="350" />
 
 さて、これで実行すると print されるかというとそういうわけでもありません。もう一つ設定が必要です。
 
 main@generator にある 'main' を見てください。これは generator の rule を設定する mapping configuration です。
 先ほど作った `Main` を紐付けます。
 
-<img src="./08_Main_02.png" width="500" />
+<img src="./08_Main_02.png" width="350" />
 
 `root mapping rules:` の空欄にフォーカスを当て、Enter を押すと rule の雛形が作られます。
 applicable concept は `UrlConept`、template は `Main` です。
@@ -27,7 +27,7 @@ Hello と表示されましたか？
 どのような Java code が生成されたか見てみましょう。Node を右クリックして 'Preview Generated Text' を選択します。
 すると、先ほど書いた `Main` class に package が付加された実行可能な Java code が表示されます。
 
-<img src="./08_Main_03.png" width="500" />
+<img src="./08_Main_03.png" width="350" />
 
 次は URL の生成部分を書いていきます。
 

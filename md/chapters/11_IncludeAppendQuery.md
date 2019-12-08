@@ -40,7 +40,7 @@ value の中身がなにも入っていないはずです。
 この `<no statements>` に `genContext.unique name from (templateValue) in context (<no node>)` というように書きます。
 genContext を入力した後に 'un' くらいまで入力して Enter を押すと勝手に入力されます。
 
-<img src="./11_IncludeAppendQuery_03.png" width="700" />
+<img src="./11_IncludeAppendQuery_03.png" width="600" />
 
 これでこの templateValue に従ってユニークな名前が自動的に生成されるようになります。
 
@@ -48,7 +48,7 @@ genContext を入力した後に 'un' くらいまで入力して Enter を押�
 先ほど include_appendPathSegments を定義した下に書きましょう。
 concept は `QueryConcept`、consequence は `include_appendQuery` とします。
 
-<img src="./11_IncludeAppendQuery_04.png" width="500" />
+<img src="./11_IncludeAppendQuery_04.png" width="600" />
 
 次に `Main` class を開きます。
 先ほど COPY_SRC Macro を定義した下に新たに COPY_SRC Macro を定義します。
@@ -58,7 +58,7 @@ Intentions から、'Add Node Macro' を選択し、中身に `COPY_SRC` と書�
 続いて、これを LOOP Macro で囲みます。
 COPY_SRC Macro を選択した状態で 'Add Node Macro' を選択肢、中身を `LOOP` とします。
 
-<img src="./11_IncludeAppendQuery_05.png" width="500" />
+<img src="./11_IncludeAppendQuery_05.png" width="350" />
 
 Inspector を確認してください。
 `iteration sequence` の中身がない状態になっているので、これを `node.queryContainer.queries` と指定し、`QueryConcept` の配列を返します。

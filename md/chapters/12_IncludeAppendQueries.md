@@ -42,7 +42,7 @@ Input concept は `<no input concept>` のままで大丈夫です。
 次に `include_appendQuery` を選択し、Template Fragment の Inspector を確認してください。
 `mapping label:` に `appendQuery` と記述します。
 
-<img src="./12_IncludeAppendQueries_03.png" width="300" />
+<img src="./12_IncludeAppendQueries_03.png" width="250" />
 
 `include_appendQueries` に戻りましょう。
 `#appendQuery` の呼び出し部分、`appendQuery` の名前の部分にフォーカスを当て、Intentions を表示します。
@@ -54,17 +54,17 @@ Input concept は `<no input concept>` のままで大丈夫です。
 ここに、`genContext.get output appendQuery for (node);` というように記述します。
 'genContext.get' まで入力して Enter を押し、'get output by label and input' を選択すると良いでしょう。
 
-<img src="./12_IncludeAppendQueries_05.png" width="800" />
+<img src="./12_IncludeAppendQueries_05.png" />
 
 準備は完了したので、reduction rules に追加しましょう。
 concept を `QueryContainerCocnept`、consequence を `include_appendQueries` として定義します。
 
-<img src="./12_IncludeAppendQueries_06.png" width="500" />
+<img src="./12_IncludeAppendQueries_06.png" width="600" />
 
 最後におなじみの COPY_SRC Macro です。
 `Main` class に移動し、class 配下の良さげなところで Intentions を表示し、'Apply COPY_SRC for node.queryContainer' を選択してください。
 
-<img src="./12_IncludeAppendQueries_07.png" width="500" />
+<img src="./12_IncludeAppendQueries_07.png" width="350" />
 
 また生成結果を確認してみましょう。以下のような生成結果を確認できるはずです。
 

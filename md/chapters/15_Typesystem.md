@@ -28,7 +28,7 @@ do {
 node feature to highlight(optional) という項目がありますので、`property scheme` にします。
 これで警告の位置が scheme になります。
 
-<img src="./15_Typesystem_01.png" width="500" />
+<img src="./15_Typesystem_01.png" width="450" />
 
 ついでに Intentions で https に置き換えられるような Quick fix を作成しましょう。
 
