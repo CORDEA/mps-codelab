@@ -28,7 +28,7 @@ do {
 node feature to highlight(optional) という項目がありますので、`property scheme` にします。
 これで警告の位置が scheme になります。
 
-![](./15_Typesystem_01.png)
+<img src="./15_Typesystem_01.png" width="500" />
 
 ついでに Intentions で https に置き換えられるような Quick fix を作成しましょう。
 
@@ -50,7 +50,7 @@ execute(node)->void {
 }
 ```
 
-![](./15_Typesystem_02.png)
+<img src="./15_Typesystem_02.png" width="300" />
 
 これで sandbox を開き、http と入力すると警告が出るようになりました。また、Intentions により https に変換することもできます。
 

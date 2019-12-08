@@ -7,7 +7,7 @@
 すると、未入力状態のエディタが開くはずです。
 設計したとおり、url の後に scheme, pathSegment の後に `pathSegment ...` が入力できます。
 
-![](./07_Sandbox_01.png)
+<img src="./07_Sandbox_01.png" width="300" />
 
 ただ、これでは実際に Java code が生成される部分がなく、ただ構文を設計したに過ぎません。
 次からはいよいよその生成部分に移ります。

@@ -22,7 +22,7 @@ Path segment と Query の追加も必要になります。これは先ほど te
 
 'Add Node Macro' で COPY_SRC Macro を配置し、mapped node で `node` をそのまま返します。
 
-![](./14_Build_01.png)
+<img src="./14_Build_01.png" width="500" />
 
 これで生成された Code を確認してみましょう。
 
@@ -37,7 +37,7 @@ public static void main(String[] args) {
 }
 ```
 
-![](./14_Build_02.png)
+<img src="./14_Build_02.png" width="500" />
 
 生成された Code は問題なさそうです。
 Node を右クリックして実行してみましょう。
