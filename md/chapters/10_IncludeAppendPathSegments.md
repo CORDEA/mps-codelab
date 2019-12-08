@@ -60,11 +60,15 @@ builder.appendPathSegment();
 Positive
 :Macro が何をしているかは Macro 部分にフォーカスを当て、Inspector (右下の Panel) を見れば分かります。
 
+![](./10_IncludeAppendPathSegments_01.png)
+
 さて、今回も `Main` でやったのと同じ mapping が必要になります。
 main を開いてください。
 
 この include_appendPathSegments は reduction rules として定義します。
 `recduction rules:` の部分で Enter を押し、Concept を `PathSegmentContainerConcept`、Consequence を `include_appendpathSegments とします。
+
+![](./10_IncludeAppendPathSegments_02.png)
 
 これらを実際に `Main` class で生成する必要もあります。
 `Main` class を開いてください。
@@ -72,6 +76,8 @@ main を開いてください。
 生成されるのは static method ですから、class の直下に生成してほしいです。
 main の下辺りを空けて Intentions を開きます。
 'Apply COPY_SRC for node.pathSegmentContainer' を選択してください。
+
+![](./10_IncludeAppendPathSegments_03.png)
 
 この COPY_SRC Macro は Node を Inspector の mapped node に書いた Node に置き換えます。今回の場合は `PathSegmentContainerConcept` です。
 そして先程の reduction rule はこれらの Node を変換します。
@@ -86,6 +92,8 @@ private static void appendPathSegments(UrlBuilder builder) {
     builder.appendPathSegment("v2");
 }
 ```
+
+![](./10_IncludeAppendPathSegments_04.png)
 
 `appendPathSegments` の呼び出しは後で作りますので、この Chapter は以上です。
 次はこれとは少し異なる方法で Query の構築を行いましょう。
