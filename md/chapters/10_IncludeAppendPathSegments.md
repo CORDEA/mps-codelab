@@ -53,7 +53,7 @@ builder.appendPathSegment();
 引数は string ですので、`appendPathSegment()` に `("")` というように空文字を入力し、その状態で Intentions を表示します。
 
 'Add Property Macro: node.pathSegment (property)' を選択します。`"$[]"` というような表示になったはずです。
-この中は何を書いても値は変わらないので、わかりやすい名前をつけましょう。ここでは Path Segment とします。
+この中は何を書いても値は変わらないので、わかりやすい名前をつけましょう。ここでは PathSegment とします。
 
 ここでの Property Macro は LOOP Macro より渡された `PathSegmentConcept` から、 property として定義した `pathSegment` を string として受け取り、さらに `builder#appendPathSegment` に渡しています。
 

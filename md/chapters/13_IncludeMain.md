@@ -34,7 +34,7 @@ public void _method_(UrlBuilder builder) {
 }
 ```
 
-`{...}` を選択して Template Fragment を作成します。
+`{` にフォーカスを当てて Template Fragment を作成します。
 
 Positive
 :ここでは予め定義していた `include_appendPathSegments` と `include_appendQueries` の method をそのまま空で定義し直すことで method の呼び出しを行っていますが、より安全に生成するなら Reference Macro を使用しましょう。<br>mapping labels に新しい label を追加し、呼び出しで Reference Macro を使用することで実現できます。
