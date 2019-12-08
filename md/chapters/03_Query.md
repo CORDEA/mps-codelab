@@ -16,7 +16,7 @@ Positive
 
 次は editor に移ります。
 editor 部分を右クリックし、'Concept Editor' を選択します。
-concept 名は先程の `QueryConcept` を入れてください。
+concept 名は先ほどの `QueryConcept` を入れてください。
 
 続いて、cell layout を定義します。
 `[>` と入力すると自動的に Horizontal Collection が入力されます。

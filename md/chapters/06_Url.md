@@ -21,7 +21,7 @@ value = a
 大本の structure の `name` はそのまま後に説明する sandbox の名前として扱われますので、host を `name` として使いましょう。
 `UrlConcept` に `INamedConcept` を実装し、加えて properties に `scheme : string` を定義します。
 
-children には `pathSegmentContainer : PathSegmentContainerConcept[1]` を定義します。これによって先程定義したとおり、Path segment を複数持つことができます。
+children には `pathSegmentContainer : PathSegmentContainerConcept[1]` を定義します。これによって先ほど定義したとおり、Path segment を複数持つことができます。
 同じように queryContainer も定義しましょう。
 
 

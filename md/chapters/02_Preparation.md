@@ -21,7 +21,7 @@ runtime (四角の 'S') を右クリックし、'Module Properties' を選択し
 
 ![](./02_Preparation_02.png)
 
-続いて、その中の runtime (フォルダの 'M') を右クリックし、'Model Properties' を選択します (先程の 'Module Properties' ではありません)。
+続いて、その中の runtime (フォルダの 'M') を右クリックし、'Model Properties' を選択します (先ほどの 'Module Properties' ではありません)。
 Used Languages に `jetbrains.mps.baseLanguage` を追加します。
 Dependencies に `java.net@java_stub` と `java.io@java_stub` を追加します。これは、後ほど java.net.URI を使うからです。
 

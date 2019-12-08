@@ -80,9 +80,9 @@ main の下辺りを空けて Intentions を開きます。
 ![](./10_IncludeAppendPathSegments_03.png)
 
 この COPY_SRC Macro は Node を Inspector の mapped node に書いた Node に置き換えます。今回の場合は `PathSegmentContainerConcept` です。
-そして先程の reduction rule はこれらの Node を変換します。
+そして先ほどの reduction rule はこれらの Node を変換します。
 
-では、実際に生成されたコードを見てみましょう。
+では、実際に生成された Java code を見てみましょう。
 Make (または Rebuild) し、sandbox で 'Preview Generated Code' を選択します。
 何か Path segment を書いている場合は、以下のようになっているはずです。
 

@@ -1,6 +1,6 @@
 ## Sandbox の作成
 
-先程まで設計していた URL Builder の構文を一度確認してみましょう。
+先ほどまで設計していた URL Builder の構文を一度確認してみましょう。
 
 まずは 'Build' -> 'Make Project' (または Rebuild) を選択し Make した後、sandbox を右クリックし 'N' のマークがついた 'UrlConcept' をクリックします。
 

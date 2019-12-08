@@ -14,18 +14,18 @@ class 名は実のところなんでも良いのですが、`Main` にしてお�
 さて、これで実行すると print されるかというとそういうわけでもありません。もう一つ設定が必要です。
 
 main@generator にある 'main' を見てください。これは generator の rule を設定する mapping configuration です。
-先程作った `Main` を紐付けます。
+先ほど作った `Main` を紐付けます。
 
 ![](./08_Main_02.png)
 
 `root mapping rules:` の空欄にフォーカスを当て、Enter を押すと rule の雛形が作られます。
 applicable concept は `UrlConept`、template は `Main` です。
-これで Rebuild して sandbox に先程作った Node を右クリックしてみてください。'Run Node null' (null の場合はなにか入力していれば変わっているはずです) と表示されるはずです。
+これで Rebuild して sandbox に先ほど作った Node を右クリックしてみてください。'Run Node null' (null の場合はなにか入力していれば変わっているはずです) と表示されるはずです。
 実行してみましょう。
 
 Hello と表示されましたか？
 どのような Java code が生成されたか見てみましょう。Node を右クリックして 'Preview Generated Text' を選択します。
-すると、先程書いた `Main` class に package が付加された実行可能な Java code が表示されます。
+すると、先ほど書いた `Main` class に package が付加された実行可能な Java code が表示されます。
 
 ![](./08_Main_03.png)
 

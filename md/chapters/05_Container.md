@@ -1,6 +1,6 @@
 ## Container の設計
 
-ここでは、先程作った Path segment と Query を複数持つような structure の定義及び editor の設計をします。
+ここでは、先ほど作った Path segment と Query を複数持つような structure の定義及び editor の設計をします。
 
 まずは Path segment から設計します。
 structure 部分を右クリックし、'Concept' を選択します。
@@ -12,7 +12,7 @@ structure 部分を右クリックし、'Concept' を選択します。
 ![](./05_Container_01.png)
 
 続いて editor を作成します。
-cell layout は先程まで見てきたものとは少し異なりますが、補完に頼ればほぼ困ることはありません。
+cell layout は先ほどまで見てきたものとは少し異なりますが、補完に頼ればほぼ困ることはありません。
 Horizontal Collection を入力すると、'pathSegments Link' というボタンが表示されるはずですので、これをクリックします。
 `pathSegments:`というのはただの文字列で今回は要らないので削ります。残しておいても構いません。
 

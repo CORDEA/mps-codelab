@@ -1,7 +1,7 @@
 ## Build した URL の出力
 
 いよいよ最後です。
-ここでは先程まで作っていた URL Builder、Template を使用して URL を出力します。
+ここでは先ほどまで作っていた URL Builder、Template を使用して URL を出力します。
 
 それでは `Main` class を選択してください。
 まずは `#main` で print している "Hello" を `builder#build()` の結果に置き換えましょう。
@@ -18,7 +18,7 @@ Constructor に Scheme と Host を渡しましょう。
 Scheme には 'Add Property Macro: node.scheme (property)' を、
 Host には 'Add Property Macro: node.name (property)' を選択します。
 
-Path segment と Query の追加も必要になります。これは先程 template を作成しましたのでこれを使います。
+Path segment と Query の追加も必要になります。これは先ほど template を作成しましたのでこれを使います。
 
 'Add Node Macro' で COPY_SRC Macro を配置し、mapped node で `node` をそのまま返します。
 

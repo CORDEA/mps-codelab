@@ -1,7 +1,7 @@
 ## appendQuery の template 作成
 
 次は appendQuery です。
-appendQuery は先程とは異なり、各 `builder#appendQuery` の呼び出しに対してそれぞれユニークな名前を持つ method を割り当てます。
+appendQuery は先ほどとは異なり、各 `builder#appendQuery` の呼び出しに対してそれぞれユニークな名前を持つ method を割り当てます。
 
 同じように template を作成します。template 名は include_appendQuery とし、input は `QueryConcept` とします。
 `QueryContainerConcept` ではないことに注意してください。
@@ -45,13 +45,13 @@ genContext を入力した後に 'un' くらいまで入力して Enter を押�
 これでこの templateValue に従ってユニークな名前が自動的に生成されるようになります。
 
 さて、これをまた reduction rule に追加します。
-先程 include_appendPathSegments を定義した下に書きましょう。
+先ほど include_appendPathSegments を定義した下に書きましょう。
 concept は `QueryConcept`、consequence は `include_appendQuery` とします。
 
 ![](./11_IncludeAppendQuery_04.png)
 
 次に `Main` class を開きます。
-先程 COPY_SRC Macro を定義した下に新たに COPY_SRC Macro を定義します。
+先ほど COPY_SRC Macro を定義した下に新たに COPY_SRC Macro を定義します。
 今回は対象の Node は後で記述するので空の Macro を定義します。
 Intentions から、'Add Node Macro' を選択し、中身に `COPY_SRC` と書きます。
 

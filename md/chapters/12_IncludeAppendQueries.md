@@ -33,14 +33,14 @@ private static void appendQuery(UrlBuilder builder) {
 
 ということは、何らかの方法で生成される method を呼び出す必要があります。こういう時に使えるのが label と Reference Macro です。
 
-まず、main に移動し、`mapping labels: ` に label を定義します。
+まず、main に移動し、`mapping labels:` に label を定義します。
 名前を `appendQuery`、Output concept を `MethodDeclaration` とします。
 Input concept は `<no input concept>` のままで大丈夫です。
 
 ![](./12_IncludeAppendQueries_02.png)
 
 次に `include_appendQuery` を選択し、Template Fragment の Inspector を確認してください。
-`mapping label: ` に `appendQuery` と記述します。
+`mapping label:` に `appendQuery` と記述します。
 
 ![](./12_IncludeAppendQueries_03.png)
 
