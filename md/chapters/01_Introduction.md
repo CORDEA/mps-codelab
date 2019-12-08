@@ -2,7 +2,9 @@
 
 [JetBrains MPS](https://www.jetbrains.com/mps/) は JetBrains が開発した言語ワークベンチです。
 この Codelab では、その MPS の使い方がなんとなく分かるレベルを目指します。
-難易度にしては公式の Tutorial としてある MPS Calculator Language Tutorial よりも簡単だと思います。
+MPS は優れた IDE ですが、学習コストが高く、[Getting started](https://www.jetbrains.com/help/mps/getting-started.html) や [MPS User's Guide](https://www.jetbrains.com/help/mps/mps-user-s-guide.html) は膨大です。公式 Document が多いのは本当に素晴らしいことですが、それ故に始める前から悩んでしまう人も多いでしょう。これはそのような人向けの「とりあえず使ってみる」というところに重点を置いた Codelab です。
+
+難易度としては公式の Tutorial としてある [MPS Calculator Language Tutorial](https://www.jetbrains.com/help/mps/mps-calculator-language-tutorial.html) よりも簡単だと思います。
 
 具体的には以下に触れていきます。
 
