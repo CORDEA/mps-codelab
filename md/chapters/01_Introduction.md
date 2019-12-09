@@ -48,7 +48,7 @@ https://example.com/api/v2?value=a&value=b
 
 完成したものは以下の Repository にありますので、困ったらこちらも参照してみてください。
 
-- https://github.com/CORDEA/urlBuilder
+- [CORDEA/urlBuilder](https://github.com/CORDEA/urlBuilder)
 
 それでは始めていきましょう。
 
