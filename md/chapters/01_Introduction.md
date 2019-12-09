@@ -1,8 +1,10 @@
 ## Introduction
 
 [JetBrains MPS](https://www.jetbrains.com/mps/) は JetBrains が開発した言語ワークベンチです。
+
+MPS は公式の Document が充実しており、[Getting started](https://www.jetbrains.com/help/mps/getting-started.html) や [MPS User's Guide](https://www.jetbrains.com/help/mps/mps-user-s-guide.html) など、これからはじめる人向けの資料も多くあります。一方で、Document が膨大であるが故にはじめる前から悩んでしまう人も多いでしょう。これはそのような人向けの「とりあえず使ってみる」というところに重点を置いた Codelab です。
+
 この Codelab では、その MPS の使い方がなんとなく分かるレベルを目指します。
-MPS は優れた IDE ですが、学習コストが高く、[Getting started](https://www.jetbrains.com/help/mps/getting-started.html) や [MPS User's Guide](https://www.jetbrains.com/help/mps/mps-user-s-guide.html) は膨大です。公式 Document が多いのは本当に素晴らしいことですが、それ故に始める前から悩んでしまう人も多いでしょう。これはそのような人向けの「とりあえず使ってみる」というところに重点を置いた Codelab です。
 
 難易度としては公式の Tutorial としてある [MPS Calculator Language Tutorial](https://www.jetbrains.com/help/mps/mps-calculator-language-tutorial.html) よりも簡単だと思います。
 
@@ -22,7 +24,7 @@ MPS は優れた IDE ですが、学習コストが高く、[Getting started](ht
 
 各役割についてはやっているうちに分かってくると思いますが、気になる場合は公式のドキュメントを参照してください。
 
-始める前に作るものも軽く紹介しておきます。作るのは URL builder です。
+はじめる前に作るものも軽く紹介しておきます。作るのは URL builder です。
 
 ```
 url https
