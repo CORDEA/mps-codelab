@@ -46,5 +46,9 @@ https://example.com/api/v2?value=a&value=b
 
 のような URL を build し出力する Java code を生成するために structure の定義、editor の設計、generator の作成を行います。
 
+完成したものは以下の Repository にありますので、困ったらこちらも参照してみてください。
+
+- https://github.com/CORDEA/urlBuilder
+
 それでは始めていきましょう。
 
