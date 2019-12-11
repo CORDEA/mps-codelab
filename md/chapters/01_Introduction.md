@@ -7,6 +7,7 @@ MPS は公式の Document が充実しており、[Getting started](https://www.
 この Codelab では、MPS の使い方がなんとなく分かるレベルを目指します。
 
 難易度としては公式の Tutorial としてある [MPS Calculator Language Tutorial](https://www.jetbrains.com/help/mps/mps-calculator-language-tutorial.html) よりも簡単なくらいだと思います。
+完了までにかかる時間は 1 時間程度です。
 
 具体的には以下に触れていきます。
 
