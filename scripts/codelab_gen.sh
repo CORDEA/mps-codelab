@@ -10,6 +10,8 @@ cp codelab/chapters/*.png "$base_dir/."
 
 cat codelab/INDEX.md > $file
 cat codelab/chapters/*.md >> $file
+
 /tmp/claat export -o docs/ $file
+cp codelab/*.html docs/mps-codelab/
 
 rm -r $base_dir
